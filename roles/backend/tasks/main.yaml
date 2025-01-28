@@ -37,10 +37,9 @@
     path: /app
 
 - name: copy backend service
-  ansible.builtin.template:
-    src: backend.service.j2
+  ansible.builtin.file:
+    src: backend.service
     dest: /etc/systemd/system/backend.service
-    remote_src: yes
 
 - name: install python libs
   ansible.builtin.pip:
