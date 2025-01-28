@@ -11,12 +11,12 @@
 
 - name: delete html directory
   ansible.builtin.file:
-    path: "{{ APP_LOCATION }}"
+    path: /usr/share/nginx/html
     state: absent
 
 - name: create html directory
   ansible.builtin.file:
-    path: "{{ APP_LOCATION }}"
+    path: /usr/share/nginx/html
     state: directory
 
 - name: download frontend code
