@@ -21,7 +21,7 @@
 
 - name: download frontend code
   ansible.builtin.get_url:
-    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{ COMPONENT }}-v2.zi p
+    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{ COMPONENT }}-v2.zip
     dest: /tmp/frontend.zip
 
 - name: unzip frontend code
